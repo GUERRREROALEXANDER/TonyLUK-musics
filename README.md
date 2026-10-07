@@ -2,6 +2,8 @@
 
 Reproductor de música web en TypeScript. Cada playlist es una **lista doblemente enlazada** escrita a mano.
 
+**Demo en vivo:** [tonyluk-musics.vercel.app](https://tonyluk-musics.vercel.app)
+
 El nombre viene de Tony (un golden retriever) y Lucky (un perrito blanco). Sus tonos dorados, crema y blancos definen toda la identidad visual.
 
 ![Pantalla de inicio de sesión](docs/screenshots/login.png)
@@ -253,6 +255,10 @@ test/          pruebas con node:test
 - Cada usuario tiene sus propias playlists, favoritos, historial y preferencias.
 
 ## Despliegue (Vercel)
+
+La app está publicada en **https://tonyluk-musics.vercel.app**.
+
+Para desplegar tu propia copia:
 
 1. Importar el repositorio en Vercel. `vercel.json` ya define:
    - el comando de build `npm run build:site`;
