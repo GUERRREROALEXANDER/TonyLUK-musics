@@ -1,0 +1,17 @@
+{
+  "name": "music-player-dll",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "build:site": "tsc && node scripts/pack.mjs",
+    "test": "tsc && node --test --test-concurrency=1 test/",
+    "dev": "tsc && node server/dev.mjs",
+    "serve": "node server/dev.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^24.1.0",
+    "typescript": "^5.5.0"
+  }
+}

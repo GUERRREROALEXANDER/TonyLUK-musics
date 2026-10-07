@@ -1,0 +1,13 @@
+@keyframes rise-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes auth-float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-6px,0)}}
+@keyframes note-float{0%,100%{transform:translate3d(0,0,0) rotate(-7deg)}50%{transform:translate3d(5px,-10px,0) rotate(8deg)}}
+@keyframes glow-breathe{0%,100%{opacity:.46;transform:scale(.96)}50%{opacity:.82;transform:scale(1.04)}}
+@keyframes ring-turn{to{transform:rotate(360deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes toast-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+[data-reveal]{opacity:0;transform:translateY(14px);transition:opacity var(--d-enter) var(--ease-out),transform var(--d-enter) var(--ease-out)}[data-reveal].is-in{opacity:1;transform:translateY(0)}
+[data-stagger]>*{transition-delay:calc(min(var(--i,0),10)*45ms)}
+button{transition:transform var(--d-press) var(--ease-out),opacity var(--d-hover) var(--ease-out)}button:active{transform:scale(.96)}
+.view-fade{animation:rise-in var(--d-view) var(--ease-out) both}.toast{animation:toast-in var(--d-enter) var(--ease-out) both}
+@media(prefers-reduced-motion:reduce){html[data-motion="system"] *,html[data-motion="system"] *::before,html[data-motion="system"] *::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}html[data-motion="system"] [data-reveal]{opacity:1;transform:none}}
+html[data-motion="reduced"] *,html[data-motion="reduced"] *::before,html[data-motion="reduced"] *::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}html[data-motion="reduced"] [data-reveal]{opacity:1;transform:none}
